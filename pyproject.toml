@@ -16,3 +16,7 @@ dependencies = [
 
 [project.scripts]
 bhm-mcp = "server:mcp.run"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]

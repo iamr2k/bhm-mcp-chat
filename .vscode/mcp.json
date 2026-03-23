@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "bhm-search": {
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["server.py"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}

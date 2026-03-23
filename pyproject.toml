@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bhm-mcp-chat"
+version = "0.1.0"
+description = "MCP server for searching BharatMatrimony profiles via GitHub Copilot"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp",
+    "requests",
+    "python-dotenv",
+]
+
+[project.scripts]
+bhm-mcp = "server:mcp.run"
